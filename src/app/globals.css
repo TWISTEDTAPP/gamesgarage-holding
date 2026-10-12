@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #2b1050;
+  --color-panel: #3b1b6b;
+  --color-deep: #1c0a36;
+  --color-mint: #9fd8b8;
+  --color-gold: #f2c14e;
+  --color-muted: #d9cdea;
+  --font-sans: "Barlow", system-ui, sans-serif;
+  --font-display: "Barlow Condensed", system-ui, sans-serif;
+}
+
+html { color-scheme: dark; }
+body { background: var(--color-bg); color: #fff; font-family: var(--font-sans); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+.h-display { font-family: var(--font-display); font-weight: 800; letter-spacing: .5px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border-radius: 10px; font-weight: 600; }
+.btn-mint { background: var(--color-mint); color: var(--color-deep); }
+.btn-ghost { border: 2px solid var(--color-mint); color: var(--color-mint); }
+.prose-gg p { margin: 0 0 12px; max-width: 65ch; color: var(--color-muted); }
+.prose-gg h2 { font-family: var(--font-display); font-weight: 800; font-size: 28px; margin: 24px 0 10px; color: #fff; }
+.prose-gg a { color: var(--color-mint); }
